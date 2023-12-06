@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+.navbar {
+  background-color: #212529;
+  padding: 12px;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar .logo {
+  width: 11%;
+}
+
+.navbar .list ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li {
+  padding: 10px;
+  padding-top: 3px;
+}
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.header {
+  height: 100vh;
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: 10px -96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: xxx-large;
+}
+.header h1 {
+  padding-bottom: 40px;
+  font-weight: 900;
+}
+.header p {
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 20px;
+}
+.header button {
+  padding: 1.25rem 2.5rem;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  font-weight: 700;
+  background-color: #ffc800;
+  color: white;
+  text-align: center;
+  margin-left: 39%;
+  text-transform: uppercase;
+  border-radius: 8px;
+}
+
+.services {
+  margin: auto;
+  text-align: center;
+  margin-top: 4%;
+  height: 500px;
+  background-color: white;
+}
+.services h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+.services-p {
+  color: #a39f9f;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Times New Roman";
+  margin-bottom: 4rem;
+}
+.services .services-items {
+  display: inline-block;
+  margin: auto;
+  width: 25%;
+  margin-right: 5%;
+  margin-left: 30px;
+}
+.services-items h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.services-items i {
+  margin-bottom: 40px;
+}
+.services-items-p {
+  font-family: "Times New Roman";
+  font-weight: 400;
+  font-size: 1rem;
+  color: #a39f9f;
+}
+
+.portfolio {
+  background-color: #f8f9fa;
+}
+.portfolio-items {
+  position: relative;
+}
+.portfolio .port-top {
+  flex-direction: column;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin: auto;
+}
+.portfolio h2 {
+  margin-left: 12%;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
+}
+.portfolio p {
+  color: #a39f9f;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Times New Roman";
+  margin-bottom: 4rem;
+}
+.portfolio .container {
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.portfolio .row {
+  display: flex;
+  gap: 20px;
+}
+
+.portfolio img {
+  width: 100%;
+  display: block;
+}
+.portfolio-items .item-content {
+  background-color: rgba(255, 200, 0, 0.9);
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+.item-content:hover {
+  opacity: 1;
+}
